@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['area']
+
+roboflow:
+  workspace: architecture-qfhdz
+  project: architecture-7y5ck
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/architecture-qfhdz/architecture-7y5ck/dataset/1
