@@ -3,7 +3,7 @@ val: ../valid/images
 test: ../test/images
 
 nc: 1
-names: ['area']
+names: ["area"]
 
 roboflow:
   workspace: architecture-qfhdz
