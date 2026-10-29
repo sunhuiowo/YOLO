@@ -1,14 +1,14 @@
 from ultralytics import YOLO
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # 加载模型
-    model = YOLO(r'runs/train/exp/weights/best.pt')  # YOLOv8n模型
+    model = YOLO(r"runs/train/exp/weights/best.pt")  # YOLOv8n模型
     model.predict(
-        source=r'../datasets/architecture/test/images/architecture3_png.rf.dfdfad87d1344bb79d812b5bdd5e6cab.jpg',  # 预测图像路径
+        source=r"../datasets/architecture/test/images/architecture3_png.rf.dfdfad87d1344bb79d812b5bdd5e6cab.jpg",  # 预测图像路径
         save=True,  # 保存预测结果
         imgsz=640,  # 输入图像的大小，可以是整数或w，h
-        project='runs/predict',  # 项目名称（可选）
-        name='exp',  # 实验名称，结果保存在'project/name'目录下（可选）
+        project="runs/predict",  # 项目名称（可选）
+        name="exp",  # 实验名称，结果保存在'project/name'目录下（可选）
         # conf=0.25,  # 用于检测的目标置信度阈值（默认为0.25，用于预测，0.001用于验证）
         # iou=0.45,  # 非极大值抑制 (NMS) 的交并比 (IoU) 阈值
         # show=False,  # 如果可能的话，显示结果
